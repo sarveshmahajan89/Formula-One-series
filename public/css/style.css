@@ -494,7 +494,7 @@ div.table-row-container:nth-of-type(odd) {
   background-color: aquamarine;
 }
 
-div.table-row-container:nth-child(2) {
+tr.table-row-driver:nth-child(1) {
   color: gold;
   background-color: teal;
   -webkit-animation-name: winner;
