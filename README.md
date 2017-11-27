@@ -22,6 +22,7 @@ To run application either start using node server or simply run index.html insid
 start application using node server :
 
 Formula-One-series
+
 => npm install
 
 => node server.js
