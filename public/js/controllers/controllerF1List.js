@@ -13,6 +13,7 @@ mobiquityApp.controller('f1ListCtrl', function ($scope,$location,$http) {
 	};
 
 	$scope.getRaceData = function() {
+		// fetching list of F1 event per year
 		var url = 'http://ergast.com/api/f1/'+$scope.selectedSession+'.json';
 
 		$http.get(url).success(function(data) {
@@ -21,6 +22,7 @@ mobiquityApp.controller('f1ListCtrl', function ($scope,$location,$http) {
 	}
 
 	$scope.getRaceResult = function(season, round) {
+		// fetching list of F1 event winner based on selection
 		$scope.selectedRound = round;
 		var url = 'http://ergast.com/api/f1/'+season+'/'+round+'/'+'results.json';
 
