@@ -1,6 +1,6 @@
 var mobiquityApp = angular.module('mobiquityApp');
 
-mobiquityApp.controller('f1ListCtrl', function ($scope,$location,$http) {
+mobiquityApp.controller('f1ListCtrl', ['$scope', '$location', '$http', function ($scope, $location,$http) {
 	// to do stuff
 	$scope.selectedSession = 2005;
 	$scope.raceData = {};
@@ -30,4 +30,4 @@ mobiquityApp.controller('f1ListCtrl', function ($scope,$location,$http) {
 			$scope.raceResult = data.MRData.RaceTable.Races[0].Results;
 		});
 	}
-});
+}]);
