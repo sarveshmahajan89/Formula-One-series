@@ -1,14 +1,14 @@
 {
-  "name": "barclays",
+  "name": "F1 Race",
   "version": "1.0.0",
-  "description": "barclays questionair",
+  "description": "F1 Race application",
   "main": "index.html",
   "scripts": {
     "test": "npm install"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://sarveshmahajan89@bitbucket.org/sarveshmahajan89/sample-code.git"
+    "url": "https://github.com/sarveshmahajan89/Formula-One-series.git"
   },
   "keywords": [
     "nodejs",
@@ -16,7 +16,7 @@
   ],
   "author": "sarvesh",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/sarveshmahajan89/sample-code#readme",
+  "homepage": "https://github.com/sarveshmahajan89/Formula-One-series/tree/master/public#readme",
   "dependencies": {
     "angular-route": "^1.6.6",
     "body-parser": "^1.15.0",

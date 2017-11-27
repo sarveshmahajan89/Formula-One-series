@@ -477,6 +477,11 @@ div.table-row-td {
   padding: 12px 0px;
 }
 
+
+div.table-row-td:not(:last-child) {
+  border-bottom: 0px;
+}
+
 div.table-row-td:active {
   background-color: #2C3E50;
 }
@@ -490,19 +495,22 @@ div.table-row-container:nth-of-type(odd) {
 }
 
 div.table-row-container:nth-child(2) {
+  color: gold;
   background-color: teal;
-  -webkit-animation-name: example;
-  -webkit-animation-duration: 4s;
-  animation-name: example;
-  animation-duration: 4s;
+  -webkit-animation-name: winner;
+  /*-webkit-animation-duration: 4s infinite;*/
+  animation-name: winner;
+  /*animation-duration: 4s infinite;*/
+  -webkit-animation: winner 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: winner 5s infinite;
 }
 
-@-webkit-keyframes example {
+@-webkit-keyframes winner {
     from {background-color: teal;}
     to {background-color: #2C3E50;}
 }
 
-@keyframes example {
+@keyframes winner {
     from {background-color: teal;}
     to {background-color: #2C3E50;}
 }

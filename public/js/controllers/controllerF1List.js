@@ -26,16 +26,6 @@ mobiquityApp.controller('f1ListCtrl', function ($scope,$location,$http) {
 
 		$http.get(url).success(function(data) {
 			$scope.raceResult = data.MRData.RaceTable.Races[0].Results;
-			console.log($scope.raceResult);
 		});
 	}
-});
-
-mobiquityApp.filter('range', function() {
-  return function(input, total) {
-    total = parseInt(total);
-    for (var i=0; i<total; i++)
-      input.push(i);
-    return input;
-  };
 });
